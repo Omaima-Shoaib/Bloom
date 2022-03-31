@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1235dp"
+        android:layout_height="407dp"
+        android:paddingTop="0dp"
+        android:src="@drawable/banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/email2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="-412dp"
+        tools:layout_editor_absoluteY="-69dp" />
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="7dp"
+        android:hint="Enter E-mail"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        app:circularflow_radiusInDP="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:hint="Confirm Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintTop_toBottomOf="@id/confirm_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="41dp" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:hint="Enter Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/password2"
+        app:layout_constraintTop_toBottomOf="@id/Name"
+        app:layout_constraintWidth_percent=".8"
+        tools:layout_editor_absoluteX="41dp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:hint="User Name"
+        android:paddingLeft="20dp"
+
+        android:paddingTop="10dp"
+        app:circularflow_radiusInDP="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email2"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/G4"
+        android:hint="Sign Up"
+        android:textColorHint="@color/G1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934"
+        app:layout_constraintWidth_percent=".5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
